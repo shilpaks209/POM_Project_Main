@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.POM_Project_Main.Scripts.LoginTest">
+        <methods>
+          <include name="takeScreenShotOnFailure"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.POM_Project_Main.Scripts.LoginTest -->
+      <class name="com.POM_Project_Main.Scripts.HomeTest">
+        <methods>
+          <include name="takeScreenShotOnFailure"/>
+          <include name="addClient"/>
+        </methods>
+      </class> <!-- com.POM_Project_Main.Scripts.HomeTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
